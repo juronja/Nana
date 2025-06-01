@@ -1,5 +1,3 @@
-Invoke-RestMethod -Uri https://raw.githubusercontent.com/juronja/Nana/refs/heads/main/luka_hpbd/install.ps1 | Invoke-Expression
-
 # Set error action preference to stop script on error
 $ErrorActionPreference = "Stop"
 
