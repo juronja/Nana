@@ -19,7 +19,7 @@ function Show-Message {
 }
 
 Show-Message "Hello Luka! This script will install Python and download a Happy Birthday script to your downloads folder...`nAfter that you just have to run the script."
-Read-Host "Press Enter to begin the installation and download process... Have fun! =^.^=" -ForegroundColor Green
+Read-Host -ForegroundColor Green "Press Enter to begin the installation and download process... Have fun! =^.^="
 
 # --- 1. Check if winget is available ---
 Show-Message "Checking for Windows Package Manager (winget)..."
