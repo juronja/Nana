@@ -1,3 +1,5 @@
+Invoke-RestMethod -Uri https://raw.githubusercontent.com/juronja/Nana/refs/heads/main/luka_hpbd/install.ps1 | Invoke-Expression
+
 # Set error action preference to stop script on error
 $ErrorActionPreference = "Stop"
 
@@ -13,14 +15,14 @@ function Show-Message {
         [string]$Color = "Green"
     )
     Write-Host ""
-    Write-Host "--------------------------------------------------------"
     Write-Host -ForegroundColor $Color $Message
-    Write-Host "--------------------------------------------------------"
     Write-Host ""
     Start-Sleep -Seconds 1
 }
 
-Show-Message "Starting setup for the Happy Birthday script..."
+Show-Message "Hello Luka! This script will install Python and download a Happy Birthday script to your downloads folder..."
+Show-Message "After that you just have to run the script."
+Read-Host "Press Enter to begin the installation and download process... Have fun! =^.^="
 
 # --- 1. Check if winget is available ---
 Show-Message "Checking for Windows Package Manager (winget)..."
