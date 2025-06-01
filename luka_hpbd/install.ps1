@@ -18,7 +18,7 @@ function Show-Message {
     Start-Sleep -Seconds 1
 }
 
-Show-Message "Hello Luka! This script will install Python and download a Happy Birthday script to your downloads folder...\nAfter that you just have to run the script."
+Show-Message "Hello Luka! This script will install Python and download a Happy Birthday script to your downloads folder...`nAfter that you just have to run the script."
 Read-Host "Press Enter to begin the installation and download process... Have fun! =^.^=" -ForegroundColor Green
 
 # --- 1. Check if winget is available ---
