@@ -39,7 +39,7 @@ Show-Message "Attempting to install Python via winget..."
 try {
     # Using --scope user to try and install without needing elevated admin if possible
     # Some packages might still require elevation depending on their installer
-    winget install -e --id Python.Python.3.11
+    winget install -e --id Python.Python.3.13
     Show-Message "Python installed successfully!"
 }
 catch {
