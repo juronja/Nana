@@ -41,7 +41,7 @@ while True:
     if new_volume_state.state == 'available':
         ec2_resource.Instance(instance_id).attach_volume(
             Device='/dev/xvdb',
-            VolumeId=new_volume["VolumeId"]    
+            VolumeId=new_volume["VolumeId"]
         )
         print("Volume restored")
         break
